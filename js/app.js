@@ -8,7 +8,7 @@ let productTypes = [];
 let products = "";
 
 (async () => {
-  let response = await fetch("data/products.json");
+  let response = await fetch("http://makeup-api.herokuapp.com/api/v1/products.json");
   loadProducts(await response.json(), comboSort.value);
 })();
 
